@@ -9,8 +9,10 @@ namespace BinarySearch
     {
         int[] data = Enumerable.Range(0, 1_000_000_000).ToArray();
 
-        // Interate over all elements of the array to find the element.
-        // Making the time complexity O(n) - Linear.
+        /*
+         * Interate over all elements of the array to find the element.
+         * Making the time complexity O(n) - Linear.
+         */
         public static int? SimpleSearch(int[] array, int guess)
         {
             for (int i = 0; i < array.Length; i++) // iterate over all items of the array to find the element
@@ -24,8 +26,10 @@ namespace BinarySearch
             return null; // if haven't found the item return null
         }
 
-        // This is a binary search algorithm, which means that it will narrow the search space by half each iteration.
-        // Making the time complexity O(log n) - Logarithmic.
+        /*
+         * This is a binary search algorithm, which means that it will narrow the search space by half each iteration.
+         * Making the time complexity O(log n) - Logarithmic.
+         */
         public static int? BinarySearch(int[] array, int guess)
         {
             int low = 0; // array starts here
