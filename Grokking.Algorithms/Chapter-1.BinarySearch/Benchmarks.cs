@@ -7,7 +7,7 @@ namespace BinarySearch
 {
     public class Benchmarks
     {
-        int[] data = Enumerable.Range(0, 1_000_000_000).ToArray();
+        int[] data = Enumerable.Range(1, 1_000_000_000).ToArray();
 
         /*
          * Interate over all elements of the array to find the element.
@@ -19,7 +19,7 @@ namespace BinarySearch
             {
                 if (array[i] == guess) // compare the element and return it if found
                 {
-                    return i;
+                    return array[i];
                 }
             }
 
@@ -50,6 +50,26 @@ namespace BinarySearch
             return null; // if haven't found the item return null
         }
 
+        /*
+         * This is a binary search algorithm using divide and conquiter
+         */
+        public static int? BinarySearchDC(int[] array, int guess, int low, int high)
+        {
+            if (low == high)
+            {
+                if (array[low] == guess)
+                    return guess;
+                else
+                    return null;
+            }
+
+            int mid = (low + high) / 2;
+            if (array[mid] > guess)
+                return BinarySearchDC(array, guess, low, mid - 1);
+            else
+                return BinarySearchDC(array, guess, mid + 1, high);
+        }
+
         [Benchmark(Baseline = true)]
         public void SimpleSearch_1_000_000_000()
         {
@@ -63,6 +83,14 @@ namespace BinarySearch
             // Here we'll see that binary search is way faster than the same guess for simple search
             // because it will narrow the search space by half each iteration
             int? guess = BinarySearch(data, 1_000_000_000);
+        }
+
+        [Benchmark]
+        public void BinarySearchDC_1_000_000_000()
+        {
+            // Here we'll see that binary search is way faster than the same guess for simple search
+            // because it will narrow the search space by half each iteration
+            int? guess = BinarySearchDC(data, 1_000_000_000, 0, data.Length - 1);
         }
 
         [Benchmark]
