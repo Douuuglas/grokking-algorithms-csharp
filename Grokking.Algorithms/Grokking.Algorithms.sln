@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Chapter-2.SelectionSort", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Chapter-3.Recursion", "Chapter-3.Recursion\Chapter-3.Recursion.csproj", "{737FAA05-D9C6-483F-8BA2-5447065D0F9A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Chapter-4.QuickSort", "Chapter-4.QuickSort\Chapter-4.QuickSort.csproj", "{97000811-256B-4370-8019-C64A529780A7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{737FAA05-D9C6-483F-8BA2-5447065D0F9A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{737FAA05-D9C6-483F-8BA2-5447065D0F9A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{737FAA05-D9C6-483F-8BA2-5447065D0F9A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{97000811-256B-4370-8019-C64A529780A7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{97000811-256B-4370-8019-C64A529780A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{97000811-256B-4370-8019-C64A529780A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{97000811-256B-4370-8019-C64A529780A7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
