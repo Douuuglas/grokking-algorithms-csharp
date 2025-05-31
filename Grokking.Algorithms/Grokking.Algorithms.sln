@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Chapter-3.Recursion", "Chap
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Chapter-4.QuickSort", "Chapter-4.QuickSort\Chapter-4.QuickSort.csproj", "{97000811-256B-4370-8019-C64A529780A7}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Chapter-5.HashTable", "Chapter-5.HashTable\Chapter-5.HashTable.csproj", "{BEE7C6EF-5550-4CF1-B1E3-315CB808E47C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{97000811-256B-4370-8019-C64A529780A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{97000811-256B-4370-8019-C64A529780A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{97000811-256B-4370-8019-C64A529780A7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BEE7C6EF-5550-4CF1-B1E3-315CB808E47C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BEE7C6EF-5550-4CF1-B1E3-315CB808E47C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BEE7C6EF-5550-4CF1-B1E3-315CB808E47C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BEE7C6EF-5550-4CF1-B1E3-315CB808E47C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
